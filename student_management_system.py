@@ -2,6 +2,9 @@ from tkinter import *
 from tkinter import ttk
 from tkinter import messagebox
 import mysql.connector
+# pip install mysql-connector-python
+
+
 
 # MySQL connection
 mydb = mysql.connector.connect(
