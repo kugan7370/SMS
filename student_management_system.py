@@ -13,6 +13,9 @@ mydb = mysql.connector.connect(
 
 mycursor = mydb.cursor()
 
+
+
+
 # Function to add student
 def add_student():
     # get values from entry
@@ -46,6 +49,8 @@ def add_student():
         # Handle any exceptions that may occur during the database operation
         messagebox.showerror("Error", f"An error occurred: {str(e)}")
 
+
+
 # Function to display students in a table
 def display_students():
     # Clear existing items in the treeview
@@ -67,6 +72,8 @@ def display_students():
     except Exception as e:
         # Handle any exceptions that may occur during the database operation
         messagebox.showerror("Error", f"An error occurred: {str(e)}")
+
+
 
 # Function to search for a student
 def search_student():
@@ -98,6 +105,9 @@ def search_student():
         # Handle any exceptions that may occur during the database operation
         messagebox.showerror("Error", f"An error occurred: {str(e)}")
 
+
+
+
 # Function to delete a student
 def delete_student():
     # get value from entry
@@ -124,6 +134,8 @@ def delete_student():
     except Exception as e:
         # Handle any exceptions that may occur during the database operation
         messagebox.showerror("Error", f"An error occurred: {str(e)}")
+
+
 
 # Function to update student details
 def update_student():
@@ -292,6 +304,10 @@ search_btn.grid(row=1, column=1, padx=20, pady=10, sticky='w')
 for i in range(7):  # Adjust the range based on the number of rows
     details_frame.grid_rowconfigure(i, weight=1)
     details_frame.grid_columnconfigure(i, weight=1)
+
+
+
+
 
 # create a treeview for displaying students
 columns = ("Roll Number", "Name", "Gender", "Age", "Contact", "Grade")
